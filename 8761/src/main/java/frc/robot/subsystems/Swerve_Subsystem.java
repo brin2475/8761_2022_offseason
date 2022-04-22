@@ -24,12 +24,7 @@ import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import com.kauailabs.navx.frc.AHRS;
 
-
-
-
 import static frc.robot.Constants.*;
-
-
 
 public class Swerve_Subsystem extends SubsystemBase {
 
@@ -136,19 +131,7 @@ public class Swerve_Subsystem extends SubsystemBase {
   
 
   
-   
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  @Override
+ @Override
   public void periodic() {
     SwerveModuleState[] states = kinematics.toSwerveModuleStates(m_chassisSpeeds);
     SwerveDriveKinematics.desaturateWheelSpeeds(states, MVMPS);
@@ -157,7 +140,5 @@ public class Swerve_Subsystem extends SubsystemBase {
     FRmodule.set(states[1].speedMetersPerSecond / MVMPS * MAX_VOLTAGE, states[1].angle.getRadians());
     BLmodule.set(states[2].speedMetersPerSecond / MVMPS * MAX_VOLTAGE, states[2].angle.getRadians());
     BRmodule.set(states[3].speedMetersPerSecond / MVMPS * MAX_VOLTAGE, states[2].angle.getRadians());
-  
-  
   }
 }
