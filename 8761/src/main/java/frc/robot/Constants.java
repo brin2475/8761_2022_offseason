@@ -18,23 +18,26 @@ public final class Constants {
 
     public static final int DriveTrain_pidgeon_ID = 0;
 
+    // constants for FL module 
     public static final int Front_Left_Drive = 0;
     public static final int Front_Left_Steer = 0;
     public static final int Front_Left_Steer_Encoder = 0;
     public static final double Front_Left_Soffset = -Math.toRadians(0.0); 
 
  
-
+    // constants for FR module 
     public static final int Front_Right_Drive = 0;
     public static final int Front_Right_Steer = 0;
     public static final int Front_Right_Steer_Encoder = 0;
     public static final double Front_Right_Soffset = -Math.toRadians(0.0);
-
+    
+    // constants for BL module 
     public static final int Back_Left_Drive = 0;
     public static final int Back_Left_Steer = 0;
     public static final int Back_left_Steer_Encoder = 0;
     public static final double Back_Left_Soffset = -Math.toRadians(0.0);
-
+    
+    // constants for BR module 
     public static final int Back_Right_Drive = 0;
     public static final int Back_Right_Steer = 0;
     public static final int Back_Right_Steer_Encoder = 0;
